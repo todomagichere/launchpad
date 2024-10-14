@@ -216,7 +216,7 @@ class Docker
     protected function perform(string $action, string $service = '', array $args = [], bool $dryRun = false)
     {
         $stringArgs = implode(' ', $args);
-        $command = "docker-compose -p {$this->getNetworkName()} -f {$this->getComposeFileName()}";
+        $command = "docker compose -p {$this->getNetworkName()} -f {$this->getComposeFileName()}";
 
         if ($this->optimizer instanceof NFSVolumes) {
             $osxExtension = str_replace('.yml', '-osx.yml', $this->getComposeFileName());
