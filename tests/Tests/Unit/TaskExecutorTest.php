@@ -42,7 +42,7 @@ class TaskExecutorTest extends TestCase
      */
     public function testComposerInstall(): void
     {
-        $command = "docker-compose -p test -f ".$this->getDockerComposeFilePath();
+        $command = "docker compose -p test -f ".$this->getDockerComposeFilePath();
         $results = $this->executor->composerInstall();
         $this->assertCount(3, $results);
 

@@ -40,7 +40,7 @@ class DockerClientTest extends TestCase
             }
         )->implode(' ');
 
-        $expected = "{$prefix} docker-compose -p test -f ".$this->getDockerComposeFilePath();
+        $expected = "{$prefix} docker compose -p test -f ".$this->getDockerComposeFilePath();
         $this->assertEquals($expected, $this->getDockerClient()->getComposeCommand());
     }
 
@@ -82,7 +82,7 @@ class DockerClientTest extends TestCase
         $this->assertCount(2, $mockedResults);
         $this->assertEquals($mockedResults[1], $this->environmentVariables);
 
-        $command = "docker-compose -p test -f ".$this->getDockerComposeFilePath();
+        $command = "docker compose -p test -f ".$this->getDockerComposeFilePath();
         $suffix = trim(str_replace($command, '', $mockedResults[0]));
 
         $this->assertEquals($expectedCommandSuffix, $suffix);
