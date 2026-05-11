@@ -5,7 +5,7 @@
  * @license   For full copyright and license information view LICENSE file distributed with this source code.
  */
 
-$repo = $_SERVER['argv'][1] ?? 'ezsystems/launchpad';
+$repo = $_SERVER['argv'][1] ?? 'todomagichere/launchpad';
 
 $context = stream_context_create(
     [
@@ -41,7 +41,7 @@ file_put_contents(
 file_put_contents(
     "ez.phar.pubkey",
     file_get_contents(
-        "https://ezsystems.github.io/launchpad/ez.phar.pubkey",
+        "https://todomagichere.github.io/launchpad/ez.phar.pubkey",
         false,
         $context
     )

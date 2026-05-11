@@ -6,7 +6,7 @@ EZ_HOME="$HOME/.ezlaunchpad"
 mkdir -p $EZ_HOME
 cd $EZ_HOME
 
-php -r "copy('https://ezsystems.github.io/launchpad/installer', 'installer');"
+php -r "copy('https://todomagichere.github.io/launchpad/installer', 'installer');"
 php installer
 rm installer
 

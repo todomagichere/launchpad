@@ -4,7 +4,7 @@ eZ Launchpad is a CLI tool to start an eZ Platform project in 5 min on top of a 
 
 It's brought to you by, and supported by the eZ Community _(on ezcommunity.slack.com #ez-launchpad)_.
 
-You can find the full documentation here: https://ezsystems.github.io/launchpad
+You can find the full documentation here: https://todomagichere.github.io/launchpad
 
 | Branch   | Travis build status |
 |:--------:|:-------------------:|
